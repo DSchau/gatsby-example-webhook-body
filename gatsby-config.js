@@ -15,7 +15,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-source-webhook`,
+    {
+      resolve: `gatsby-source-webhook`,
+      options: {
+        acccessToken: process.env.DATO_ACCESS_TOKEN,
+        environment: process.env.DATO_ENVIRONMENT
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
