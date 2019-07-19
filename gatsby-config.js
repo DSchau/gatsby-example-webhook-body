@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-source-webhook`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
